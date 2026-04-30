@@ -237,9 +237,9 @@ const FeatureCard = ({ icon: Icon, title, desc, delay }: { icon: any, title: str
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ delay, duration: 0.5 }}
-    className="bg-surface border border-white/10 p-8 rounded-2xl hover:bg-surface-highlight hover:border-primary/50 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(37,99,235,0.3)] transition-all duration-300 ease-out group flex flex-col"
+    className="bg-surface border border-white/10 p-8 rounded-2xl hover:bg-surface-highlight hover:border-primary/50 hover:shadow-[0_10px_40px_-10px_rgba(37,99,235,0.15)] transition-all duration-300 ease-out group flex flex-col"
   >
-    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300 shrink-0">
+    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shrink-0">
       <Icon size={28} />
     </div>
     <h3 className="text-xl font-bold mb-3 group-hover:text-white transition-colors">{title}</h3>
@@ -257,8 +257,8 @@ const Vision = () => {
               <div className="w-12 h-0.5 bg-primary" />
               <span className="text-primary font-mono text-sm tracking-widest uppercase">Vision</span>
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">专业定位</h2>
-            <p className="text-text-muted text-sm md:text-base leading-relaxed border-l-2 border-white/10 pl-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">专业定位</h2>
+            <p className="text-text-muted text-base leading-relaxed border-l-2 border-white/10 pl-6">
               聚焦虚拟化、分布式架构与云原生技术体系，培养具备企业级云平台构建、自动化运维与安全治理能力的高水平技术人才。强调架构思维、系统稳定性与规模化部署能力，支撑现代数字化基础设施建设。
             </p>
           </div>
@@ -296,8 +296,8 @@ const Vision = () => {
 };
 
 const CourseCard = ({ icon: Icon, title, desc, sub }: { icon: any, title: string, desc: string, sub: string }) => (
-  <div className="bg-surface border border-white/10 p-8 rounded-2xl hover:bg-surface-highlight hover:border-primary/50 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(37,99,235,0.3)] transition-all duration-300 ease-out group flex flex-col h-full">
-    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300 shrink-0">
+  <div className="bg-surface border border-white/10 p-8 rounded-2xl hover:bg-surface-highlight hover:border-primary/50 hover:shadow-[0_10px_40px_-10px_rgba(37,99,235,0.15)] transition-all duration-300 ease-out group flex flex-col h-full">
+    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shrink-0">
       <Icon size={28} />
     </div>
     <h3 className="text-xl font-bold mb-3 group-hover:text-white transition-colors">{title}</h3>
@@ -313,9 +313,9 @@ const Curriculum = () => {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-2 h-8 bg-primary rounded-full" />
-            <h2 className="text-xl md:text-2xl font-bold">核心课程体系</h2>
+            <h2 className="text-3xl font-bold">核心课程体系</h2>
           </div>
-          <p className="text-text-muted text-sm md:text-base max-w-2xl">
+          <p className="text-text-muted text-base max-w-2xl">
             掌握现代云架构、容器化、安全及可扩展基础设施运维所需的核心技能。
           </p>
         </div>
@@ -377,9 +377,9 @@ const Partnership = () => {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-8 bg-primary rounded-full" />
-            <h2 className="text-xl md:text-2xl font-bold">校企合作</h2>
+            <h2 className="text-3xl font-bold">校企合作</h2>
           </div>
-          <div className="space-y-4 text-text-muted leading-relaxed text-sm md:text-base border-l-2 border-white/10 pl-6 w-full">
+          <div className="space-y-4 text-text-muted leading-relaxed text-base border-l-2 border-white/10 pl-6 w-full">
             <p>
               依托与 <span className="text-white font-medium">中国电子科技集团公司第五十五研究所</span>、<span className="text-white font-medium">中国电信</span>、<span className="text-white font-medium">中国移动</span>、<span className="text-white font-medium">海康威视</span> 等行业单位的合作基础，构建面向真实工程场景的实践体系。
             </p>
@@ -391,8 +391,8 @@ const Partnership = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {partners.map((partner) => (
-            <div key={partner.name} className="bg-surface border border-white/10 p-8 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-surface-highlight hover:border-primary/50 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(37,99,235,0.3)] transition-all duration-300 ease-out group cursor-default h-[200px]">
-              <div className="w-16 h-16 mb-5 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300 shrink-0">
+            <div key={partner.name} className="bg-surface border border-white/10 p-8 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-surface-highlight hover:border-primary/50 hover:shadow-[0_10px_40px_-10px_rgba(37,99,235,0.15)] transition-all duration-300 ease-out group cursor-default h-[200px]">
+              <div className="w-16 h-16 mb-5 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 shrink-0">
                 <Building2 size={32} />
               </div>
               <h3 className="text-lg font-bold text-white/90 group-hover:text-white transition-colors mb-3 whitespace-pre-line">
@@ -437,9 +437,9 @@ const CareerPath = () => {
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-2 h-8 bg-primary rounded-full" />
-            <h2 className="text-xl md:text-2xl font-bold">就业前景</h2>
+            <h2 className="text-3xl font-bold">就业前景</h2>
           </div>
-          <div className="space-y-4 text-text-muted leading-relaxed text-sm md:text-base border-l-2 border-white/10 pl-6 w-full">
+          <div className="space-y-4 text-text-muted leading-relaxed text-base border-l-2 border-white/10 pl-6 w-full">
             <p>
               随着云计算、大数据与人工智能技术的快速发展，越来越多的企业将业务系统部署到云平台，对云计算技术人才的需求持续增长。云计算专业毕业生可在 <span className="text-white font-medium">互联网企业</span>、<span className="text-white font-medium">软件公司</span>、<span className="text-white font-medium">金融机构</span>、<span className="text-white font-medium">政府信息中心</span> 以及各类 <span className="text-white font-medium">企事业单位</span> 从事云平台运维、云应用开发、系统部署与自动化运维等工作，就业面广、发展空间大。
             </p>
@@ -523,8 +523,8 @@ const FAQ = () => {
            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-6 backdrop-blur-sm">
               <span>常见问题</span>
            </div>
-           <h2 className="text-2xl md:text-3xl font-bold mb-6">答疑解惑</h2>
-           <p className="text-text-muted text-sm md:text-base max-w-2xl mx-auto">
+           <h2 className="text-3xl md:text-4xl font-bold mb-6">答疑解惑</h2>
+           <p className="text-text-muted text-base max-w-2xl mx-auto">
              关于专业学习、就业方向与课程设置的详细解答
            </p>
         </div>
@@ -584,8 +584,8 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">联系与咨询</h2>
-            <p className="text-text-muted text-sm md:text-base mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">联系与咨询</h2>
+            <p className="text-text-muted text-base mb-12">
               对我们的云计算专业课程感兴趣？欢迎联系我们。
             </p>
             
