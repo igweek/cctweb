@@ -711,15 +711,33 @@ export default function App() {
     <div className="min-h-screen bg-background text-text-main selection:bg-primary/30 selection:text-white relative overflow-hidden">
       {/* Global Ambient Background */}
       <div className="fixed inset-0 z-0 pointer-events-none flex items-center justify-center overflow-hidden">
+        {/* Top Middle glow */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] max-w-[1000px] h-[70vw] max-h-[1000px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.15)_0,transparent_60%)]" />
+        
         {/* Top Right glow */}
-        <div className="absolute top-0 right-0 w-[60vw] max-w-[800px] h-[60vw] max-h-[800px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.15)_0,transparent_50%)] -translate-y-1/2 translate-x-1/3" />
+        <div className="absolute top-0 right-0 w-[60vw] max-w-[800px] h-[60vw] max-h-[800px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1)_0,transparent_50%)] -translate-y-1/2 translate-x-1/3" />
         
         {/* Bottom Left glow */}
-        <div className="absolute bottom-0 left-0 w-[60vw] max-w-[800px] h-[60vw] max-h-[800px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1)_0,transparent_50%)] -translate-x-1/3 translate-y-1/3" />
+        <div className="absolute bottom-0 left-0 w-[60vw] max-w-[800px] h-[60vw] max-h-[800px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.15)_0,transparent_50%)] -translate-x-1/3 translate-y-1/3" />
 
         {/* Center blue glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] max-w-[800px] h-[40vw] max-h-[600px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.08)_0,transparent_60%)]" />
         
+        {/* Random scattered glows */}
+        <div className="absolute top-[30%] right-[15%] w-[40vw] max-w-[500px] h-[40vw] max-h-[500px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.08)_0,transparent_60%)]" />
+        <div className="absolute top-[60%] left-[20%] w-[50vw] max-w-[600px] h-[50vw] max-h-[600px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.06)_0,transparent_60%)]" />
+        <div className="absolute bottom-[20%] right-[20%] w-[45vw] max-w-[550px] h-[45vw] max-h-[550px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.09)_0,transparent_60%)]" />
+        
+        {/* Additional right/bottom glows */}
+        <div className="absolute bottom-0 right-0 w-[60vw] max-w-[800px] h-[60vw] max-h-[800px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.15)_0,transparent_50%)] translate-x-1/4 translate-y-1/4" />
+        <div className="absolute bottom-[40%] right-[5%] w-[35vw] max-w-[450px] h-[35vw] max-h-[450px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.08)_0,transparent_60%)]" />
+        <div className="absolute top-[15%] left-[8%] w-[40vw] max-w-[400px] h-[40vw] max-h-[400px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.07)_0,transparent_60%)]" />
+
+        {/* More random glows */}
+        <div className="absolute top-[45%] left-[5%] w-[30vw] max-w-[400px] h-[30vw] max-h-[400px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.1)_0,transparent_60%)]" />
+        <div className="absolute top-[75%] right-[35%] w-[40vw] max-w-[500px] h-[40vw] max-h-[500px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.08)_0,transparent_60%)]" />
+        <div className="absolute top-[25%] left-[45%] w-[35vw] max-w-[450px] h-[35vw] max-h-[450px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.07)_0,transparent_60%)]" />
+
         {/* Grid pattern fading out at edges */}
         <div 
           className="absolute inset-0 grid-bg opacity-60"
